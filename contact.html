@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | Agence Morningcom Sénégal (Devis web)</title>
+    <meta name="description" content="Besoin d'un devis pour la création d'un site web, un événement ou votre stratégie digitale ? Contactez l'agence Morningcom à Dakar, Sénégal.">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Contactez-nous | Agence Morningcom Sénégal (Devis web)">
+    <meta property="og:description" content="Besoin d'un devis pour la création d'un site web, un événement ou votre stratégie digitale ? Contactez l'agence Morningcom à Dakar, Sénégal.">
+    <meta property="og:image" content="https://morningcom.agency/assets/images/global/Preview.png">
+    <meta property="og:url" content="https://morningcom.agency/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contactez-nous | Agence Morningcom Sénégal (Devis web)">
+    <meta name="twitter:description" content="Besoin d'un devis pour la création d'un site web, un événement ou votre stratégie digitale ? Contactez l'agence Morningcom à Dakar, Sénégal.">
+    <meta name="twitter:image" content="https://morningcom.agency/assets/images/global/Preview.png">
+<link rel="icon" type="image/png" href="assets/images/global/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<script src="components/header.js"></script>
+
+<!-- HERO -->
+<section class="hero" style="min-height: 50vh; padding-bottom: 60px;">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-tag fade-in">Démarrer un projet</div>
+  <h1 class="hero-title fade-in fade-in-delay-1">Devis et <em>Contact.</em></h1>
+  <p class="hero-subtitle fade-in fade-in-delay-2">Parlez-nous de votre projet. Décrivez vos besoins et obtenez une estimation rapide.</p>
+</section>
+
+<section class="about" style="padding-top: 40px; padding-bottom: 120px;">
+  <div class="eng-grid">
+    <div class="fade-in">
+      <form id="contactForm" style="display:flex; flex-direction:column; gap:24px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+          <input type="text" id="name" placeholder="Votre nom complet" style="padding:20px; background:var(--dark-3); border:1px solid rgba(0,0,0,.1); color:var(--cream); font-family:'DM Sans'; font-size:15px; outline:none; width:100%;" required>
+          <input type="email" id="email" placeholder="Votre email professionnel" style="padding:20px; background:var(--dark-3); border:1px solid rgba(0,0,0,.1); color:var(--cream); font-family:'DM Sans'; font-size:15px; outline:none; width:100%;" required>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+          <select id="service" style="padding:20px; background:var(--dark-3); border:1px solid rgba(0,0,0,.1); color:var(--cream); font-family:'DM Sans'; font-size:15px; outline:none; width:100%; border-radius:0;">
+            <option value="" disabled selected>Service souhaité</option>
+            <option value="Stratégie et Conseil">Stratégie et Conseil</option>
+            <option value="Création et Design">Création et Design</option>
+            <option value="Digital et Performance">Digital et Performance</option>
+            <option value="Marketing Musical">Marketing Musical</option>
+            <option value="Autre demande">Autre demande</option>
+          </select>
+          <select id="budget" style="padding:20px; background:var(--dark-3); border:1px solid rgba(0,0,0,.1); color:var(--cream); font-family:'DM Sans'; font-size:15px; outline:none; width:100%; border-radius:0;">
+            <option value="" disabled selected>Budget estimé</option>
+            <option value="Moins de 500k">Moins de 500 000 FCFA</option>
+            <option value="500k - 2.5M">500 000 FCFA - 2 500 000 FCFA</option>
+            <option value="Plus de 2.5M">Plus de 2 500 000 FCFA</option>
+            <option value="Indéterminé">Je ne sais pas encore</option>
+          </select>
+        </div>
+        <textarea id="message" placeholder="Décrivez votre projet ou votre demande..." style="padding:20px; background:var(--dark-3); border:1px solid rgba(0,0,0,.1); color:var(--cream); font-family:'DM Sans'; font-size:15px; outline:none; width:100%; min-height:180px; resize:none;" required></textarea>
+        <button type="submit" class="btn-primary" style="border:none; cursor:none; width:fit-content; background:#FFFFFF; color:#000000;">Envoyer ma demande</button>
+      </form>
+
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const service = document.getElementById('service').value;
+          const budget = document.getElementById('budget').value;
+          const msg = document.getElementById('message').value;
+          
+          let body = "Demande de projet pour Morningcom\n\n";
+          body += "Nom : " + name + "\n";
+          body += "Email : " + email + "\n";
+          body += "Service : " + (service || 'Non spécifié') + "\n";
+          body += "Budget : " + (budget || 'Non spécifié') + "\n\n";
+          body += "Message :\n" + msg;
+          
+          const subject = encodeURIComponent("Nouveau Projet - Morningcom - " + name);
+          const encodedBody = encodeURIComponent(body);
+          
+          window.location.href = `mailto:contact@morningcom.agency?subject=${subject}&body=${encodedBody}`;
+        });
+      </script>
+    </div>
+    <div class="eng-visual fade-in fade-in-delay-1">
+      <div class="eng-visual-title">Nos <em>Coordonnées</em></div>
+      <p><strong>Adresse:</strong><br>Plateau, Dakar - Sénégal</p>
+      <br>
+      <p><strong>Téléphone:</strong><br>(+221) 77 485 94 94</p>
+      <br>
+      <p><strong>Email:</strong><br>contact@morningcom.agency</p>
+      <div class="socials" style="margin-top:40px;">
+        <a href="https://www.linkedin.com/company/morning-com/" class="social-link" title="LinkedIn" target="_blank">
+           <img src="assets/images/global/linkedin.png" alt="LinkedIn" style="width: 16px; height: 16px; object-fit: contain; filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://www.instagram.com/morningcom1?igsh=cm9kd3dhZnd1ZHIw" class="social-link" title="Instagram" target="_blank">
+           <img src="assets/images/global/instagram.png" alt="Instagram" style="width: 16px; height: 16px; object-fit: contain; filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61576414455905" class="social-link" title="Facebook" target="_blank">
+           <img src="assets/images/global/facebook.png" alt="Facebook" style="width: 16px; height: 16px; object-fit: contain; filter: brightness(0) invert(1);">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="components/footer.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

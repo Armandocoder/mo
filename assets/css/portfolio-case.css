@@ -1,0 +1,17 @@
+﻿/* ─────────────────────────────────────────
+   portfolio-case.css — Pages de cas clients
+───────────────────────────────────────── */
+
+.gallery-item .hover-zoom { transform: scale(1); }
+.gallery-item:hover .hover-zoom { transform: scale(1.08); }
+
+@media(max-width:1000px) {
+    .project-meta { flex-direction:column; gap:40px !important; padding: 0 40px 60px !important; }
+    .eng-grid { grid-template-columns: 1fr !important; gap:60px !important; }
+    .gallery { padding: 40px 24px !important; }
+    .gallery-grid { grid-template-columns: 1fr !important; }
+    .gallery-item { grid-column: auto !important; grid-row: auto !important; height: 350px !important; }
+}
+@media(max-width:600px) {
+    .project-meta { padding: 0 24px 60px !important; }
+}

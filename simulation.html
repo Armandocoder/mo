@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Devis & Prix | Agence Morningcom</title>
+    <meta name="description" content="Estimez rapidement le prix de création de site web, stratégie ou marketing musical avec le simulateur de projet de l'agence de communication Morningcom.">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Simulateur de Devis & Prix | Agence Morningcom">
+    <meta property="og:description" content="Estimez rapidement le prix de création de site web, stratégie ou marketing musical avec le simulateur de projet de l'agence de communication Morningcom.">
+    <meta property="og:image" content="https://morningcom.agency/assets/images/global/Preview.png">
+    <meta property="og:url" content="https://morningcom.agency/simulation.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simulateur de Devis & Prix | Agence Morningcom">
+    <meta name="twitter:description" content="Estimez rapidement le prix de création de site web, stratégie ou marketing musical avec le simulateur de projet de l'agence de communication Morningcom.">
+    <meta name="twitter:image" content="https://morningcom.agency/assets/images/global/Preview.png">
+<link rel="icon" type="image/png" href="assets/images/global/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/simulation.css">
+</head>
+
+<body>
+
+    <script src="components/header.js"></script>
+
+    <!-- HERO -->
+    <section class="hero" style="min-height: 55vh;">
+        <div class="hero-bg"></div>
+        <div class="hero-num">M</div>
+        <div class="hero-tag fade-in">Outil d'estimation</div>
+        <h1 class="hero-title fade-in fade-in-delay-1">Configurez<br>votre projet.</em></h1>
+        <p class="hero-subtitle fade-in fade-in-delay-2">
+            Sélectionnez vos prestations et obtenez une estimation tarifaire indicative en temps réel.
+        </p>
+    </section>
+
+    <!-- SIMULATOR -->
+    <div class="sim-wrapper">
+        <div class="sim-container">
+        <div class="sim-header fade-in">
+            <div>
+                <div class="section-label">Votre sélection
+                    <span class="sim-count-badge zero" id="countBadge">0</span>
+                </div>
+                <h2 class="section-title" style="font-size: clamp(28px, 4vw, 48px);">Choisissez vos<br>prestations.</h2>
+            </div>
+            <p class="sim-header-desc">Cliquez sur les services qui vous intéressent. Le récapitulatif s'actualise
+                instantanément. Ce simulateur vous donne une fourchette indicative — notre équipe vous remettra un devis
+                précis.</p>
+        </div>
+
+        <div class="sim-layout">
+            <!-- LEFT: service cards -->
+            <div>
+                <div class="sim-cards-grid" id="simGrid">
+
+                    <!-- GROUP: STRATEGY & AUDIT -->
+                    <!-- GROUP: BRANDING -->
+                    <div class="sim-card fade-in" data-service="Stratégie & Audit" data-price="400000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 11l3 3L22 4" />
+                                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Stratégie & Audit</div>
+                        <div class="sim-card-desc">Analyse 360°, audit technique et positionnement de marque stratégique.</div>
+                        <div><span class="sim-card-price">400 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <div class="sim-card fade-in fade-in-delay-1" data-service="Identité Visuelle" data-price="850000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Identité Visuelle</div>
+                        <div class="sim-card-desc">Logo, charte premium et univers visuel complet (Print & Digital).</div>
+                        <div><span class="sim-card-price">850 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <div class="sim-card fade-in fade-in-delay-2" data-service="Brand Content" data-price="500000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Brand Content</div>
+                        <div class="sim-card-desc">Production visuelle, photographie et storytelling pour humaniser votre marque.</div>
+                        <div><span class="sim-card-price">500 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <!-- GROUP: DIGITAL -->
+                    <div class="sim-card fade-in" data-service="Expérience Web" data-price="1200000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8 21h8M12 17v4M2 7h20" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Expérience Web</div>
+                        <div class="sim-card-desc">Design et développement de sites vitrines optimisés pour la conversion.</div>
+                        <div><span class="sim-card-price">1 200 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <div class="sim-card fade-in fade-in-delay-1" data-service="Social Media & CM" data-price="600000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 7a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Social Media & CM</div>
+                        <div class="sim-card-desc">Animation de vos réseaux sociaux sur 3 mois avec calendrier éditorial.</div>
+                        <div><span class="sim-card-price">600 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <div class="sim-card fade-in fade-in-delay-2" data-service="Performance SEO" data-price="700000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="11" cy="11" r="8" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M21 21l-4.35-4.35" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Performance SEO</div>
+                        <div class="sim-card-desc">Optimisation technique et contenu pour dominer les résultats Google.</div>
+                        <div><span class="sim-card-price">700 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <!-- GROUP: IMPACT -->
+                    <div class="sim-card fade-in" data-service="Growth Ads" data-price="800000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Growth Ads (Ads)</div>
+                        <div class="sim-card-desc">Social Ads & Search (Meta, Google) avec suivi et optimisation ROI.</div>
+                        <div><span class="sim-card-price">800 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <div class="sim-card fade-in fade-in-delay-1" data-service="Marketing d'Influence" data-price="900000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 7a4 4 0 100-8 4 4 0 000 8z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">Marketing d'Influence</div>
+                        <div class="sim-card-desc">Stratégie d'activation de créateurs et influenceurs locaux ciblés.</div>
+                        <div><span class="sim-card-price">900 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+
+                    <div class="sim-card fade-in fade-in-delay-2" data-service="IA & Automatisation" data-price="750000">
+                        <div class="sim-card-top">
+                            <div class="sim-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="sim-card-check"><div class="sim-card-check-inner">✓</div></div>
+                        </div>
+                        <div class="sim-card-name">IA & Automatisation</div>
+                        <div class="sim-card-desc">Vidéos IA, chatbots et automatisation marketing pour plus d'efficience.</div>
+                        <div><span class="sim-card-price">750 000</span><span class="sim-card-unit">FCFA</span></div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT: result panel -->
+            <div class="sim-panel fade-in fade-in-delay-2">
+                <div class="sim-panel-head">
+                    <div class="sim-panel-head-label">Récapitulatif</div>
+                    <div class="sim-panel-head-title">Votre estimation</div>
+                </div>
+                <div class="sim-panel-body">
+                    <div class="sim-line-list" id="lineList">
+                        <div class="sim-empty" id="emptyState">
+                            <div class="sim-empty-dot"></div>
+                            En attente de sélection…
+                        </div>
+                    </div>
+                    <div class="sim-divider"></div>
+                    <div class="sim-total-row">
+                        <div class="sim-total-label-col">
+                            <div class="sim-total-label">Total indicatif</div>
+                            <div class="sim-total-sub">Hors taxes</div>
+                        </div>
+                        <div>
+                            <div style="display:flex; align-items:baseline; gap:6px; justify-content:flex-end;">
+                                <div class="sim-total-price" id="totalPrice">0</div>
+                                <div class="sim-total-currency">FCFA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-sim">
+                        Demander un devis précis
+                        <svg width="14" height="10" viewBox="0 0 16 12" fill="none">
+                            <path d="M10 1L15 6M15 6L10 11M15 6H1" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <p class="sim-disclaimer">* Estimation indicative basée sur nos tarifs moyens. Une proposition
+                        commerciale détaillée sera établie après étude de votre cahier des charges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PACKS -->
+    <div class="packs-section">
+        <div class="packs-header fade-in">
+            <div>
+                <div class="section-label">Offres packagées</div>
+                <h2 class="section-title" style="font-size: clamp(28px, 4vw, 48px);">Nos <em>packs</em>
+                    prêts-à-l'emploi.</h2>
+            </div>
+            <p>Des formules complètes pensées pour chaque étape de croissance de votre marque, à prix fixe et inclusions
+                clairement définies.</p>
+        </div>
+        <div class="packs-grid">
+            <div class="pack-card fade-in">
+                <div class="pack-num">01</div>
+                <div class="pack-badge">L'Essentiel</div>
+                <div class="pack-name">Pack INTRO</div>
+                <div class="pack-price">1 200 000 <span>FCFA</span></div>
+                <div class="pack-divider"></div>
+                <ul class="pack-list">
+                    <li>Stratégie de Marque & Audit Digital IA</li>
+                    <li>Identité Visuelle Premium (Logo/Charte)</li>
+                    <li>Brand Content (Photo/Storytelling)</li>
+                    <li>Social Media (1 mois d'accompagnement)</li>
+                </ul>
+                <a href="mailto:contact@morningcom.agency?subject=Démarrage Pack INTRO&body=Bonjour illustre équipe Morningcom,%0D%0A%0D%0AJe souhaite démarrer le Pack INTRO (1 200 000 FCFA).%0D%0A%0D%0ADétails du pack :%0D%0A- Stratégie & Audit IA%0D%0A- Identité Visuelle Premium%0D%0A- Brand Content%0D%0A- Social Media (1 mois)%0D%0A%0D%0AMerci de me recontacter pour les prochaines étapes." class="pack-cta">Démarrer ce pack →</a>
+            </div>
+            <div class="pack-card featured fade-in fade-in-delay-1">
+                <div class="pack-num">02</div>
+                <div class="pack-badge">La Croissance</div>
+                <div class="pack-name">Pack SCALE</div>
+                <div class="pack-price">2 800 000 <span>FCFA</span></div>
+                <div class="pack-divider"></div>
+                <ul class="pack-list">
+                    <li>Stratégie Branding & Identité Visuelle</li>
+                    <li>Design & Création Site Web Vitrine</li>
+                    <li>Growth Ads (Campagne Acquisition)</li>
+                    <li>Création de Contenu IA & Automatisé</li>
+                    <li>Social Media & CM (3 mois inclus)</li>
+                </ul>
+                <a href="mailto:contact@morningcom.agency?subject=Démarrage Pack SCALE&body=Bonjour illustre équipe Morningcom,%0D%0A%0D%0AJe souhaite démarrer le Pack SCALE (2 800 000 FCFA).%0D%0A%0D%0ADétails du pack :%0D%0A- Stratégie & Identité Visuelle%0D%0A- Site Web Vitrine%0D%0A- Growth Ads%0D%0A- Contenu IA & Automation%0D%0A- Social Media (3 mois)%0D%0A%0D%0AMerci de me recontacter pour les prochaines étapes." class="pack-cta">Démarrer ce pack →</a>
+            </div>
+            <div class="pack-card fade-in fade-in-delay-2">
+                <div class="pack-num">03</div>
+                <div class="pack-badge">La Domination</div>
+                <div class="pack-name">Pack ELITE</div>
+                <div class="pack-price">5 500 000 <span>FCFA</span></div>
+                <div class="pack-divider"></div>
+                <ul class="pack-list">
+                    <li>Stratégie 360 & Identité Visuelle</li>
+                    <li>Site Web Haute Performance & SEO</li>
+                    <li>Production Vidéo Corporate Premium</li>
+                    <li>Marketing d'Influence & Relations Presse</li>
+                    <li>Social Media & Ads (6 mois inclus)</li>
+                </ul>
+                <a href="mailto:contact@morningcom.agency?subject=Démarrage Pack ELITE&body=Bonjour illustre équipe Morningcom,%0D%0A%0D%0AJe souhaite démarrer le Pack ELITE (5 500 000 FCFA).%0D%0A%0D%0ADétails du pack :%0D%0A- Stratégie 360 & Identité%0D%0A- Site Web & SEO%0D%0A- Vidéo Corporate Premium%0D%0A- Influence & Relations Presse%0D%0A- Social Media & Ads (6 mois)%0D%0A%0D%0AMerci de me recontacter pour les prochaines étapes." class="pack-cta">Démarrer ce pack →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+        <h2 class="cta-title">Prêt à passer à<br><em>l'action ?</em></h2>
+        <a href="contact.html" class="btn-dark">
+            Obtenir un devis
+            <span class="arrow-icon">→</span>
+        </a>
+    </div>
+
+    <script src="components/footer.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/simulation.js"></script>
+</body>
+
+</html>
