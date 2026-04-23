@@ -552,6 +552,13 @@ section{padding:140px 60px}
   border-bottom: 1px solid rgba(0,0,0,0.05);
   overflow: hidden;
 }
+.clients .section-label,
+.clients .section-title {
+  color: #000000;
+}
+.clients .section-label::before {
+  background: #000000;
+}
 .clients-header{
   margin-bottom: 60px;
   text-align: center;
