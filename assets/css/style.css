@@ -545,10 +545,10 @@ section{padding:140px 60px}
 
 /* CLIENTS TICKER */
 .clients{
-  background:var(--dark); 
-  color: var(--cream);
+  background:#FFFFFF; 
+  color: var(--dark);
   padding: 140px 0 0;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(0,0,0,0.05);
   overflow: hidden;
 }
 .clients-header{
@@ -562,9 +562,7 @@ section{padding:140px 60px}
   position: relative;
   display: flex;
   background: #FFFFFF;
-  padding: 40px 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 40px 0 60px;
 }
 .clients-ticker-wrapper:hover .clients-ticker-track {
   animation-play-state: paused;
