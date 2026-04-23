@@ -610,10 +610,9 @@ section{padding:140px 60px}
 
 /* CTA SECTION */
 .cta-section{
-  background:#FFFFFF;color:var(--dark);
+  background:var(--blue);color:var(--cream);
   padding:100px 60px;
   display:flex;justify-content:space-between;align-items:center;gap:40px;
-  border-top: 1px solid rgba(0,0,0,0.05);
 }
 @media(max-width:800px){.cta-section{flex-direction:column;padding:80px 24px}}
 .cta-title{
@@ -624,7 +623,7 @@ section{padding:140px 60px}
 }
 .cta-title em{font-style:italic;display:block;color:var(--gold);}
 .btn-dark{
-  background:var(--dark);color:var(--cream);
+  background:var(--cream);color:var(--blue);
   font-family:'DM Sans',sans-serif;
   font-size:12px;letter-spacing:.18em;text-transform:uppercase;
   padding:18px 48px;text-decoration:none;font-weight:700;
