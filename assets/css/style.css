@@ -579,7 +579,7 @@ section{padding:140px 60px}
   justify-content: center;
   padding: 0 40px;
   transition: all 0.4s ease;
-  filter: grayscale(1) brightness(0.8) opacity(0.5);
+  filter: brightness(0) invert(1) opacity(0.5);
 }
 .client-item img {
   max-width: 100%;
@@ -587,7 +587,8 @@ section{padding:140px 60px}
   object-fit: contain;
 }
 .client-item:hover {
-  filter: grayscale(0) brightness(1) opacity(1);
+  filter: none;
+  opacity: 1;
   transform: scale(1.05);
 }
 .client-logo-text {
