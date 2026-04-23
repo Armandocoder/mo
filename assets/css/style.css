@@ -547,9 +547,8 @@ section{padding:140px 60px}
 .clients{
   background:var(--dark); 
   color: var(--cream);
-  padding: 100px 0;
+  padding: 140px 0 0;
   border-top: 1px solid rgba(255,255,255,0.05);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
   overflow: hidden;
 }
 .clients-header{
